@@ -1,10 +1,10 @@
 <?php
-$servername = "localhost";
+$servername = "db";
 $username = "root";
-$password = "P@ssw0rd";
+$password = "MYSQL_ROOT_PASSWORD";
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=test", $username, $password);
+  $conn = new PDO("mysql:host=$servername;dbname=MYSQL_DATABASE", $username, $password);
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   echo "Connected successfully";
