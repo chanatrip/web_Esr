@@ -1,0 +1,32 @@
+
+#custom-1 {
+    position: absolute;
+    top:96px;
+    left:67px;
+    font-size: 20px;
+}
+#custom-2 {
+    position: absolute;
+    top:96px;
+    left:200px;
+    font-size: 20px;
+}
+#custom-3 {
+    position: absolute;
+    top:96px;
+    left:425px;
+    font-size: 20px;
+}
+#custom-4 {
+    position: absolute;
+    top:96px;
+    left:500px;
+    font-size: 20px;
+    white-space: nowrap;
+}
+#custom-5 {
+    position: absolute;
+    top:96px;
+    left:600px;
+    font-size: 20px;
+}
