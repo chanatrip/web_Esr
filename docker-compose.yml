@@ -14,12 +14,12 @@ services:
     image: mysql:latest
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: MYSQL_ROOT_PASSWORD
-      MYSQL_DATABASE: MYSQL_DATABASE
-      MYSQL_USER: MYSQL_USER
-      MYSQL_PASSWORD: MYSQL_PASSWORD
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: esr
+      # MYSQL_USER: myuser1
+      # MYSQL_PASSWORD: mypassword
     volumes:
-      - ./sql/:/var/lib/mysql/
+      - ./sql/:/docker-entrypoint-initdb.d/
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     ports:
