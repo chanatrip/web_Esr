@@ -19,7 +19,8 @@ services:
       # MYSQL_USER: myuser1
       # MYSQL_PASSWORD: mypassword
     volumes:
-      - ./sql/:/docker-entrypoint-initdb.d/
+      # - ./mysql-data/:/var/lib/mysql/
+      - ./sql-scripts/:/docker-entrypoint-initdb.d/
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     ports:
